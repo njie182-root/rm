@@ -1,7 +1,7 @@
 import os
 from datetime import datetime
 
-BASE_URL = "https://sunshinecaferesto.com"  # GANTI
+BASE_URL = "https://sunshinecaferesto.com"  
 
 IGNORE_FILES = ["404.html"]
 OUTPUT_FILE = "sitemap.xml"
@@ -32,5 +32,6 @@ with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
     f.write("</urlset>")
 
 print("✅ sitemap.xml berhasil dibuat!")
+
 
 
