@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sunshinecaferesto.com/sitemap.xml
+Sitemap: https://njie182-root.github.io/rm/sitemap.xml
