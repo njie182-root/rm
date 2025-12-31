@@ -28,3 +28,6 @@ jobs:
           git add sitemap.xml
           git commit -m "Auto update sitemap.xml" || echo "No changes"
           git push
+          
+permissions:
+  contents: write
