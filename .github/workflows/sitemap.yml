@@ -10,21 +10,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-    - name: Setup Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.x'
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
 
-    - name: Generate sitemap
-      run: python sitemap_generator.py
+      - name: Generate sitemap
+        run: node scripts/generate-sitemap.js
 
-    - name: Commit sitemap
-      run: |
-        git config user.name "github-actions"
-        git config user.email "github-actions@github.com"
-        git add sitemap.xml
-        git commit -m "Auto update sitemap.xml" || echo "No changes"
-        git push
+      - name: Commit sitemap.xml
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add sitemap.xml
+          git commit -m "Auto update sitemap.xml" || echo "No changes"
+          git push
