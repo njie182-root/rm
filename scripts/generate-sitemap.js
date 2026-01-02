@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const SITE_URL = "https://njie182-root.github.io/rm"; // GANTI INI
+const SITE_URL = "https://sunshinecaferesto.com"; // GANTI INI
 const ROOT_DIR = path.join(__dirname, "..");
 
 const ignore = ["node_modules", ".git", ".github", "scripts"];
