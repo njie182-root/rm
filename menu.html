@@ -233,8 +233,79 @@
 <script src="https://www.highperformanceformat.com/64204ef8317342eeaff070bad2bf965f/invoke.js"></script>
 
 </div>
+    <!-- Floating Adstera Mobile -->
+<style>
+#floating-adstera {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+  z-index: 9999;
+  padding: 10px 0;
+}
+
+#floating-adstera .ad-container {
+  max-width: 320px;
+  margin: auto;
+  position: relative;
+}
+
+#floating-adstera .close-ad {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Hanya tampil di layar kecil (mobile) */
+@media (min-width: 768px) {
+  #floating-adstera {
+    display: none;
+  }
+}
+</style>
+
+<div id="floating-adstera">
+  <div class="ad-container">
+    <button class="close-ad" onclick="closeAd()">✕</button>
+
+    <!-- 🔽 PASANG SCRIPT ADSTERA DI SINI 🔽 -->
+    <!-- Contoh banner Adstera -->
+    <script>
+  atOptions = {
+    'key' : '64204ef8317342eeaff070bad2bf965f',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/64204ef8317342eeaff070bad2bf965f/invoke.js"></script>
+    <!-- 🔼 AKHIR SCRIPT ADSTERA 🔼 -->
+
+  </div>
+</div>
+
+<script>
+function closeAd() {
+  document.getElementById("floating-adstera").style.display = "none";
+}
+</script>
+
     </body>
 </html>
+
+
+
 
 
 
